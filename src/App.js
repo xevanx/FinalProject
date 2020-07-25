@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import Header from './components/Layout/Header'
 import Games from './components/pages/Games/Games'
 import Home from './components/pages/Home/Home'
+import Scoreboard from './components/pages/Home/Scoreboard'
 import About from '../src/components/pages/About/About'
 import TetrisGame from './components/pages/Games/tetris/TetrisStart'
 import SnakeGame from './components/pages/Games/Snake/SnakeGame'
@@ -41,13 +42,14 @@ function App() {
   // }, [user] )
 
   return (
-    <div className='MineBody'>
+    <div className='divBody'>
       <div className='App'>
         <div className='container'>
           <Header />
             <UserContext.Provider value={UserId}>
               <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/Scoreboard" exact component={Scoreboard} />
                 <Route path="/profile" exact render={()=><Profile updatedUser={updateUser}/>}  />
                 <Route path="/Games" exact component={Games}/>
                 <Route path="/About" exact component={About}/>

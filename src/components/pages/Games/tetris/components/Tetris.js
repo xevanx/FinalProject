@@ -21,13 +21,12 @@ const Tetris = () => {
     rowsCleared
   );
 
-  console.log('re-render');
+  // console.log('re-render');
   
   const { user } = useAuth0();
   const UserId = [];
   axios.post('http://localhost:3001/api/user', user)
             .then( res => {
-                console.log(res.data._id);
                 UserId.push(res.data._id)
             })
             
@@ -69,9 +68,11 @@ const Tetris = () => {
       if (player.pos.y < 1) {
         console.log('GAME OVER!!!');
         //Output final game score before reset
-        console.log(score);
         setGameOver(true);
         setDropTime(null);
+        //Final score and id
+        console.log(score);
+        console.log(UserId);
       }
       updatePlayerPos({ x: 0, y: 0, collided: true });
     }

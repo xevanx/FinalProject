@@ -21,10 +21,10 @@ const App = () => {
     const { user } = useAuth0();
     const UserId = [];
     axios.post('http://localhost:3001/api/user', user)
-            .then( res => {
-                console.log(res.data._id);
-                UserId.push(res.data._id)
-            })
+        .then( res => {
+            console.log(res.data._id);
+            UserId.push(res.data._id)
+        })
 
     useEffect(() => {
         if (isLive && !hasWon && !hasLost) {
@@ -57,7 +57,9 @@ const App = () => {
     useEffect(() => {
         if (hasLost) {
             setFace(":O");
-            // can post final score here
+            // Final score and Id
+            console.log(UserId)
+            console.log(newScore)
         }
     }, [hasLost]);
 
