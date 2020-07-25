@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <Link to="/profile" onClick={() => loginWithRedirect()} 
+  return <Link to="/Home" onClick={() => loginWithRedirect()} 
       style={linkStyle}>
         Log In
     </Link>;
 };
 
 const linkStyle = {
-  color: "#fff",
+  color: "black",
   textAlign: 'center',
   textDecoration: 'none'
 }

@@ -17,7 +17,7 @@ const LogoutButton = () => {
 }
 
 const linkStyle = {
-    color: "#999",
+    color: "black",
     textAlign: 'center',
     textDecoration: 'none'
   }
