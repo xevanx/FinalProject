@@ -1,7 +1,9 @@
 .App {
   text-align: center;
-  background-color: purple;
-  height: 1000%;
+  color: white;
+  /* background-image: url(./components/Img/Web-back.jpg); */
+  background-image: url(./components/Img/bg.png);
+  padding-bottom: 60%;
 }
 
 .App-logo {
