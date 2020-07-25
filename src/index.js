@@ -11,7 +11,7 @@ ReactDOM.render(
   <Router> 
     <Auth0ProviderWithHistory>
       <React.StrictMode>
-        <App />
+        <App classname="fullpage" />
       </React.StrictMode>
     </Auth0ProviderWithHistory>
   </Router>,
