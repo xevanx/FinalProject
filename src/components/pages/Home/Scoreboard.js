@@ -32,13 +32,23 @@ export class Scoreboard extends React.Component {
 
     render() {
         return (
-            <div className="MinesweeperScore">
-                <h1>Best of Minesweeper</h1>
-                <ul>
-                    {this.state.scoreboard.map((leader, key) => {
-                        return <li key={key}>{leader}</li>
-                    })}
-                </ul>
+            <div>
+                <div className="MinesweeperScore">
+                    <h1>Best of Minesweeper</h1>
+                    <ul>
+                        {this.state.scoreboard.map((leader, key) => {
+                            return <li key={key}>{leader}</li>
+                        })}
+                    </ul>
+                </div>
+                <div className="TetrisScore">
+                    <h1>Best of Tetris</h1>
+                    <ul>
+                        {this.state.scoreboard.map((leader, key) => {
+                            return <li key={key}>{leader}</li>
+                        })}
+                    </ul>
+                </div>
             </div>
         )
     }

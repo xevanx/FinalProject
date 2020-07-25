@@ -60,7 +60,7 @@ function App() {
         </Switch>
       </UserContext.Provider>
       <div className="body">
-        Hello World
+        
       </div>
     </div>
   );

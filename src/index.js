@@ -5,6 +5,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Auth0ProviderWithHistory from '../src/components/pages/Login/Auth0-Provider-with-history';
+// const express = require('express');
+// const mongoose = require('mongoose');
+// const bodyParser = require('body-parser');
 
             
 ReactDOM.render(
