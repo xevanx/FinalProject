@@ -22,6 +22,14 @@ const Tetris = () => {
   );
 
   // console.log('re-render');
+  // const Tetris_Data = new Schema ({
+  //   user_id: {type: String},
+  //   score: {type: Number},
+  //   date: {type: Date, default: Date.now}
+  // });
+  // tetrisSchema.save(function (err) {
+  //   if (err) return handleError(err);
+  // });
   
   const { user } = useAuth0();
   const UserId = [];
@@ -71,6 +79,9 @@ const Tetris = () => {
         setGameOver(true);
         setDropTime(null);
         //Final score and id
+        // Schema.create({ userName: `${UserId}`, score: `${score}` }, function (err, tetrisSchema) {
+        //   if (err) return handleError (err);
+        // });
         console.log(score);
         console.log(UserId);
       }

@@ -30,7 +30,7 @@ const Games = () => {
 }
 
 const linkStyle = {
-  color: "black",
+  color: "white",
   textAlign: "center",
   textDecoration: "none",
 };
